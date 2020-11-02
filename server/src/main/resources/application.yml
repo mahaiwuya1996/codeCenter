@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10023/eureka/
+server:
+  port: 8050
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          searchPaths: repo
+          uri: https://github.com/mahaiwuya1996/configCenter.git
