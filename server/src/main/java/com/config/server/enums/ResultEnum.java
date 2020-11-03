@@ -32,7 +32,7 @@ public enum ResultEnum {
     REQ_METHOD_NOT_SUPPORT(-108,"请求方式不支持");
 
     /**错误码*/
-    private int code;
+    private Integer code;
     /**错误详情*/
     private String value;
 
